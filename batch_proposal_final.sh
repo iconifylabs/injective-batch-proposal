@@ -21,8 +21,6 @@ WASM_EXTRA=" "
 
 WASM_COMMON_ARGS=" --deposit=${DEPOSIT} --from ${WASM_WALLET} ${WASM_EXTRA} --chain-id ${WASM_CHAIN_ID} --broadcast-mode sync --node ${WASM_NODE} --gas ${GAS} --gas-adjustment ${GAS_ADJUSTMENT} --gas-prices ${GAS_PRICES} --log-format json  --yes"
 
-mkdir -p artifacts
-
 # 
 function check_txn_result() {
 	local tx_hash=$1
